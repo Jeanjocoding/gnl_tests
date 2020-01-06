@@ -62,6 +62,7 @@ int	main(int ac, char **av)
 	while (get_next_line(fd1, &line))
 	{
 		printf("%s\n", line);
+//		return (0);
 		system(echo_writer(line, "log_test1"));
 		free(line);
 	}
